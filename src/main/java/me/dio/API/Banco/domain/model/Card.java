@@ -5,7 +5,6 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
-import java.util.UUID;
 
 @Entity(name = "cards")
 @Getter
@@ -14,7 +13,7 @@ public class Card {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private UUID card_id;
+    private Long card_id;
 
     @Column(unique = true)
     private String number;

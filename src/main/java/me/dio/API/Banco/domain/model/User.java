@@ -5,7 +5,6 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.util.List;
-import java.util.UUID;
 
 @Entity(name = "users")
 @Getter
@@ -13,7 +12,7 @@ import java.util.UUID;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private UUID usr_id;
+    private Long usr_id;
 
     @Column(nullable = false)
     private String name;
